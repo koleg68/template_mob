@@ -213,7 +213,6 @@ h1,
 
 .servise-box img {
   max-width: 100%;
-  border-radius: 50%
 }
 
 .meet {
@@ -280,6 +279,7 @@ p.skill {
 
 .meet-box img {
   max-width: 100%;
+  border-radius: 50%;
 }
 
 .meet-box > div {
@@ -676,6 +676,9 @@ footer a:hover {
   .experience-box {
     width: 45%;
   }
+  p.skill {
+    margin: 0;
+  }
   .experience-wrope > div:nth-child(2) {
     position: absolute;
     top: 0;
@@ -745,6 +748,9 @@ footer a:hover {
   }
   .foot {
     display: none;
+  }
+  .sotials {
+    margin: 0 auto 5%;
   }
 }
 /*# sourceMappingURL=style.css.map */
