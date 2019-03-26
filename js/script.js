@@ -8,29 +8,20 @@ window.onload = function () {
 
       scrollToTop();
    };
+
    function scrollToTop() {
 
       if (scrolled > 0) {
          window.scrollTo(0, scrolled);
          scrolled = scrolled - 500; //скорость прокрутки
          timer = setTimeout(scrollToTop, 100);
-      }
-      else {
+      } else {
          clearTimeout(timer);
          window.scrollTo(0, 0);
       }
    }
 
-   // window.onscroll = function () {
-   //    var top = document.getElementById('up');
-   //    if (window.pageYOffset > 100) {
-   //       top.style.display = 'block';
-   //    } else {
-   //       top.style.display = 'none';
-   //    }
-   // };
-
- };
+};
 // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
    animationTime = 300,
@@ -64,3 +55,22 @@ anchors.forEach(function (item) {
       }, animationTime / framesCount);
    });
 });
+
+var btn = document.getElementsByTagName('button');
+for (var i = 0; i < btn.length; i++) {
+   btn[i].onmousedown = function (event) {
+      event.target.classList.add('pushed');
+   };
+   btn[i].onmouseup = function (event) {
+      event.target.classList.remove('pushed');
+   };
+}
+var x = document.getElementsByClassName('i');
+console.log(x);
+
+for (var j=0; j<x.length; j++) {
+  var z = 0; x[j].getElementsByTagName('a');
+}
+console.log(z);
+
+
