@@ -33,11 +33,10 @@
                Hi there! We are the new kids on the block <br>
                and we build awesome websites and mobile apps.
             </h1>
-            <button class="work">work with us!</button>
+            <button class="work btn">work with us!</button>
          </div>
 
       </header>
-
 
       <!--============ section service =============-->
 
@@ -163,8 +162,6 @@
                </div>
             </div>
          </div>
-
-
       </section>
 
       <!-- ============ SECTION EXPERIENCE =========== -->
@@ -218,10 +215,10 @@
                consequatur adipisci similique natus.</p>
          </div>
          <div class="folders">
-            <div class="all i"><a href="#">all</a></div>
-            <div class="web i"><a href="#">web</a></div>
-            <div class="apps i"><a href="#">apps</a></div>
-            <div class="icons i"><a href="#">icons</a></div>
+            <div class="btn i"><a href="/">all</a></div>
+            <div class="btn i"><a href="/">web</a></div>
+            <div class="btn i"><a href="/">apps</a></div>
+            <div class="btn i"><a href="/">icons</a></div>
          </div>
          <div class="portfolio-wrope">
             <div class="column1">
@@ -245,7 +242,7 @@
             </div>
          </div>
          <div class="btn">
-            <button class="more-projects">load more projects</button>
+            <button class="more-projects btn">load more projects</button>
          </div>
       </section>
 
@@ -325,6 +322,12 @@
             <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202)456-1111</p>
          </div>
          <form action="form_lesson/mail.php" method="POST">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Лендинг">
+            <input type="hidden" name="admin_email" value="adam.smit.2000@list.ru">
+            <input type="hidden" name="form_subject" value="тестовое письмо">
+            <!-- END Hidden Required Fields -->
+
             <div class="form" id="form">
                <input type="text" name="user_name" placeholder="Your Name" autofocus="autofocus" />
                <input type="email" name="user_email" placeholder='Your Email' />
@@ -333,7 +336,7 @@
 
          </form>
          <div class="btn">
-            <button id="one" type="submit" class="btn-form">send message</button>
+            <button id="one" type="submit" class="btn-form btn">send message</button>
          </div>
       </section>
 
@@ -358,12 +361,12 @@
       <div id="up"><img src="img/up.png" alt=""></div>
    </div>
 
-
    <script src="js/script.js"></script>
    <script src="js/jquery-3.3.1.min.js"></script>
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
    <script src="js/perehod.js"></script>
    <script src="js/progresscircle.js"></script>
+   <script src="script.js"></script>
 
 
 </body>

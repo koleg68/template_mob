@@ -22,7 +22,10 @@ window.onload = function () {
    }
 
 };
+
+
 // собираем все якоря; устанавливаем время анимации и количество кадров
+
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
    animationTime = 300,
    framesCount = 20;
@@ -34,12 +37,12 @@ anchors.forEach(function (item) {
       e.preventDefault();
 
       // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
-      let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
+      var coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
 
       // запускаем интервал, в котором
-      let scroller = setInterval(function () {
+      var scroller = setInterval(function () {
          // считаем на сколько скроллить за 1 такт
-         let scrollBy = coordY / framesCount;
+         var scrollBy = coordY / framesCount;
 
          // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
          // и дно страницы не достигнуто
@@ -56,7 +59,8 @@ anchors.forEach(function (item) {
    });
 });
 
-var btn = document.getElementsByTagName('button');
+
+var btn = document.getElementsByClassName('btn');
 for (var i = 0; i < btn.length; i++) {
    btn[i].onmousedown = function (event) {
       event.target.classList.add('pushed');
@@ -65,12 +69,6 @@ for (var i = 0; i < btn.length; i++) {
       event.target.classList.remove('pushed');
    };
 }
-var x = document.getElementsByClassName('i');
-console.log(x);
 
-for (var j=0; j<x.length; j++) {
-  var z = 0; x[j].getElementsByTagName('a');
-}
-console.log(z);
 
 
