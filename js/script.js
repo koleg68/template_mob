@@ -70,5 +70,8 @@ for (var i = 0; i < btn.length; i++) {
    };
 }
 
-
+$(document).ready(function () {
+   $('.title h1').animated('fadeInDown', 'fadeOutUp');
+   $('h2').animated('bounceInRight', 'bounceInRight');
+});
 
